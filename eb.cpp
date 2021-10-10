@@ -8,24 +8,24 @@ int main()
     for (N; N <= 15; N++)
     {
         n = 0;
-        cout << "введите радиус = ";
+        cout << "radius = ";
         cin >> r;
-        cout << "введите количество точек от (1 до 15) t = ";
+        cout << "number of points (from 1 to 15) t = ";
         cin >> t;
         while (t < 0 || t > 15) 
         {
-            cout << "t не в диапазоне :(, введите другое число от (1 до 15) t = ";
+            cout << "t is not in range :(, enter another number (from 1 to 15) t = ";
             cin >> t;
         }
         for (i = 1; i <= t; i++) 
         {
-            cout << i << " точка. введите координату x = ";
+            cout << i << " point. coordinate x = ";
             cin >> x; 
-            cout << "введите координату y = ";
+            cout << "coordinate y = ";
             cin >> y;
             if (pow(x, 2) + pow(y, 2) <= pow(r, 2))
                 n++;
         }
-        cout << "количество точек лежащих в окружности = "<< n << endl;
+        cout << "number of points in a circle = "<< n << endl;
     }
 }
